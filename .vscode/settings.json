@@ -1,0 +1,17 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "cSpell.words": [
+    "chameleonfutureacademyapp",
+    "Enzo",
+    "FIAP",
+    "kotlin",
+    "mobileprovision",
+    "nativewind",
+    "trivago",
+    "worklets"
+  ]
+}
