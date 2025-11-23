@@ -11,7 +11,9 @@
     "kotlin",
     "mobileprovision",
     "nativewind",
+    "Pressable",
     "trivago",
+    "whatsapp",
     "worklets"
   ]
 }
