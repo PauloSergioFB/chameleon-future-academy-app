@@ -17,6 +17,7 @@ export type AuthContextType = {
 }
 
 type User = {
+  userId: number
   fullName: string
   email: string
   whatsApp: string
@@ -37,6 +38,7 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
         if (token) {
           const responseData = await getUser()
           setUser({
+            userId: responseData["user_id"],
             fullName: responseData["full_name"],
             email: responseData.email,
             whatsApp: responseData.whatsapp,
