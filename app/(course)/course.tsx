@@ -68,7 +68,7 @@ const Course = () => {
         showsVerticalScrollIndicator={false}
       >
         <TouchableOpacity
-          onPress={() => router.back()}
+          onPress={() => router.push("/search")}
           className="flex-row items-center gap-2"
         >
           <ArrowLeft size={24} color={colors.text} />
@@ -131,7 +131,7 @@ const Course = () => {
             try {
               createEnrollment(user.userId, course.course_id)
             } catch (error: any) {
-              console.log(error?.response)
+              console.log(error)
             }
 
             const firstContent = course.contents[0]

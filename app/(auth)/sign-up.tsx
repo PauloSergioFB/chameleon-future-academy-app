@@ -34,7 +34,7 @@ const SignUp = () => {
     try {
       await createUser(data)
 
-      const token = await authUser({
+      const { token } = await authUser({
         email: data.email,
         password: data.password,
       })

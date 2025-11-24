@@ -36,9 +36,8 @@ const Lesson = () => {
         const lessonData = await getLesson(Number(courseId))
         setCourse(courseData as CourseDetails)
         setLesson(lessonData as LessonData)
-        console.log(lessonData)
       } catch (error: any) {
-        console.log(error?.response)
+        console.log(error)
         router.replace("/")
       } finally {
         setIsLoading(true)
@@ -60,7 +59,10 @@ const Lesson = () => {
         showsVerticalScrollIndicator={false}
       >
         <View className="w-full flex-row items-center">
-          <TouchableOpacity className="flex-row items-center gap-2">
+          <TouchableOpacity
+            onPress={() => router.back()}
+            className="flex-row items-center gap-2"
+          >
             <ArrowLeft size={24} color={colors.text} />
             <Text className="font-quicksand-semi-bold text-xl text-text">
               Voltar

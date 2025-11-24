@@ -107,7 +107,8 @@ export const createEnrollment = async (userId: number, courseId: number) => {
       },
     })
   } catch (error: any) {
-    console.log(error)
+    console.log("Falha ao matricular usuario", userId, courseId)
+    console.log(error?.response)
   }
 }
 

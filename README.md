@@ -6,23 +6,19 @@
 
 O Chameleon Future Academy é uma plataforma educacional criada para ajudar pessoas cujas profissões estão sendo impactadas ou substituídas pelos avanços tecnológicos. Seu objetivo é facilitar a migração de carreira, oferecendo cursos focados em habilidades relevantes para o mercado do futuro.
 
-...
+No estágio atual de desenvolvimento, o aplicativo é capaz de criar uma conta de usuário, realizar login, manter a sessão autenticada por meio de token JWT armazenado no AsyncStorage e listar cursos com opção de filtragem. As demais funcionalidades previstas para o produto final, ainda não estão implementadas nesta versão.
 
 > Este repositório contém os arquivos do APP Chameleon Future Academy, desenvolvido com React Native.
 
 ---
 
-[Design Visual](#design-visual) | [Funcionalidades do Aplicativo](#funcionalidades-do-aplicativo) | [Setup do Projeto](#setup-do-projeto) | [Stack Tecnológica](#stack-tecnológica) | [Desenvolvedores](#desenvolvedores)
+[Demonstração da Solução](#demonstração-da-solução) | [Setup do Projeto](#setup-do-projeto) | [Stack Tecnológica](#stack-tecnológica) | [Desenvolvedores](#desenvolvedores)
 
 ---
 
-## Design Visual
+## Demonstração da Solução
 
-...
-
-## Funcionalidades do Aplicativo
-
-...
+**Assista no YouTube:** [https://youtu.be/jwT6pl8h4AI](https://youtu.be/jwT6pl8h4AI)
 
 ## Setup do Projeto
 
@@ -33,6 +29,7 @@ O Chameleon Future Academy é uma plataforma educacional criada para ajudar pess
 - **Emulador Android** ou aplicativo **Expo Go** no dispositivo físico
 
 #### 1. Clonar Repositório
+
 ```bash
 # Clonar o repositório
 git clone https://github.com/PauloSergioFB/chameleon-future-academy-app.git
@@ -46,7 +43,8 @@ npm install
 # Iniciar o projeto
 npx expo start
 ```
-**Recomendação:** execute o aplicativo em um dispositivo Android (emulador ou dispositivo físico) para uma melhor experiência.  
+
+**Recomendação:** execute o aplicativo em um dispositivo Android (emulador ou dispositivo físico) para uma melhor experiência.
 
 Depois de rodar npx expo start, abra o aplicativo Expo Go no seu celular e escaneie o QR Code exibido no terminal.  
 Se preferir usar o emulador, basta abrir o emulador e, no terminal do Expo, apertar a para instalar e executar o app automaticamente.
