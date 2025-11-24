@@ -38,7 +38,7 @@ const Lesson = () => {
         setLesson(lessonData as LessonData)
         console.log(lessonData)
       } catch (error: any) {
-        console.log(error)
+        console.log(error?.response)
         router.replace("/")
       } finally {
         setIsLoading(true)
@@ -90,7 +90,6 @@ const Lesson = () => {
               (item) => item.content_id === Number(contentId),
             )
 
-            console.log(currentContent)
             if (!currentContent) {
               console.log("Não foi possível definir o conteúdo atual")
               return router.push("/")

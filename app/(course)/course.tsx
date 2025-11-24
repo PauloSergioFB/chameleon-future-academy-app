@@ -130,7 +130,9 @@ const Course = () => {
           onPress={() => {
             try {
               createEnrollment(user.userId, course.course_id)
-            } catch {}
+            } catch (error: any) {
+              console.log(error?.response)
+            }
 
             const firstContent = course.contents[0]
             if (firstContent.type === "lesson") {

@@ -32,7 +32,7 @@ export function useApi<T, P extends Record<string, string | number>>({
         const result = (await fn(callParams)) as { content: any[] }
         setData(result.content)
       } catch (error: any) {
-        console.log(error)
+        console.log(error?.response)
 
         let msg = "Erro inesperado. Tente novamente."
         setErrors({ error: msg })
